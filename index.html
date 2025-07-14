@@ -3,9 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Servicios por Suscripción | CESH404</title>
+  <title>CESH404 | Servicios por Suscripción</title>
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Open+Sans&display=swap" rel="stylesheet" />
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
@@ -14,22 +17,35 @@
     }
     header {
       text-align: center;
-      padding: 2rem 1rem;
+      padding: 2rem 1rem 1rem;
     }
     header h1 {
       font-family: 'Rajdhani', sans-serif;
-      font-size: 2.5rem;
+      font-size: 2.2rem;
       color: #00e0b8;
     }
-    .intro {
+    .linktree {
       text-align: center;
-      max-width: 800px;
-      margin: auto;
-      padding: 0 1rem 2rem;
-      font-size: 1.1rem;
+      margin: 0 auto 2rem;
+      padding: 0 1rem;
+    }
+    .linktree a {
+      display: block;
+      background-color: #00e0b8;
+      color: #111;
+      text-decoration: none;
+      margin: 1rem auto;
+      padding: 0.9rem 1.5rem;
+      width: 260px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .linktree a:hover {
+      background-color: #00bfa4;
     }
     .plans-section {
-      padding: 2rem 1rem;
+      padding: 3rem 1rem;
     }
     .plans-section h2 {
       font-family: 'Rajdhani', sans-serif;
@@ -79,15 +95,9 @@
       font-weight: bold;
       text-decoration: none;
     }
-    footer {
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
-    }
     .contact-info {
       text-align: center;
-      margin-top: 3rem;
+      padding: 2rem 1rem;
       font-size: 1rem;
       color: #ccc;
     }
@@ -95,18 +105,26 @@
       color: #00e0b8;
       text-decoration: none;
     }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>Servicios por Suscripción | CESH404</h1>
+    <h1>CESH404</h1>
   </header>
 
-  <section class="intro">
-    <p>Contrata soporte técnico remoto o servicios profesionales para sitios WordPress desde cualquier parte del mundo. Atención en español e inglés.</p>
+  <section class="linktree">
+    <a href="https://wa.me/573102753099" target="_blank">💬 WhatsApp</a>
+    <a href="https://instagram.com/cesh404" target="_blank">📸 Instagram</a>
+    <a href="#planes">📋 Ver planes de suscripción</a>
   </section>
 
-  <section class="plans-section">
+  <section id="planes" class="plans-section">
     <h2>Soporte Técnico Remoto</h2>
     <div class="plans">
       <div class="plan">
