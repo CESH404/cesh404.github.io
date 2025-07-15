@@ -12,7 +12,7 @@
     body {
       margin: 0;
       font-family: 'Open Sans', sans-serif;
-      background: linear-gradient(180deg, #0d0d0d, #1a1a1a);
+      background-color: #000;
       color: #fff;
     }
     header {
@@ -39,10 +39,12 @@
       color: #ccc;
     }
     .about img.profile {
-      max-width: 160px;
+      width: 160px;
+      height: 160px;
       border-radius: 50%;
+      object-fit: cover;
       margin-bottom: 1rem;
-      border: 3px solid #00e0b8;
+      box-shadow: 0 0 0 4px rgba(0,0,0,0.2) inset;
     }
     .linktree {
       text-align: center;
@@ -75,11 +77,12 @@
       text-align: center;
       margin-bottom: 2rem;
     }
-    .plans {
+    .plans-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
       gap: 2rem;
+      margin-bottom: 3rem;
     }
     .plan {
       background-color: #1c1c1c;
@@ -152,6 +155,80 @@
     <a href="#planes">📋 Ver planes de suscripción</a>
   </section>
 
-  <!-- ... secciones de planes y contacto permanecen igual ... -->
+  <section class="plans-section" id="planes">
+    <h2>Planes de Suscripción</h2>
+    <div class="plans-grid">
+      <div class="plan">
+        <h3>Soporte Técnico Básico</h3>
+        <p class="price">$12 USD/mes</p>
+        <ul>
+          <li>Asistencia remota 3 veces al mes</li>
+          <li>Respuesta en menos de 24h</li>
+          <li>Windows / Office / correo / red</li>
+        </ul>
+        <a href="https://wa.me/573102753099" class="cta" target="_blank">Solicitar</a>
+      </div>
+      <div class="plan">
+        <h3>Soporte Técnico Pro</h3>
+        <p class="price">$22 USD/mes</p>
+        <ul>
+          <li>Soporte ilimitado (de lunes a sábado)</li>
+          <li>Soporte remoto prioritario</li>
+          <li>Mantenimiento y limpieza mensual</li>
+        </ul>
+        <a href="https://wa.me/573102753099" class="cta" target="_blank">Solicitar</a>
+      </div>
+      <div class="plan">
+        <h3>Soporte Total Hogar</h3>
+        <p class="price">$39 USD/mes</p>
+        <ul>
+          <li>Soporte ilimitado para hasta 3 equipos</li>
+          <li>Backups, antivirus y rendimiento</li>
+          <li>Asesoría en compras y mejoras</li>
+        </ul>
+        <a href="https://wa.me/573102753099" class="cta" target="_blank">Solicitar</a>
+      </div>
+    </div>
+    <div class="plans-grid">
+      <div class="plan">
+        <h3>WordPress Starter</h3>
+        <p class="price">$29 USD/sitio</p>
+        <ul>
+          <li>Instalación de WordPress + Elementor</li>
+          <li>Diseño inicial profesional</li>
+          <li>No incluye hosting ni dominio</li>
+        </ul>
+        <a href="https://wa.me/573102753099" class="cta" target="_blank">Solicitar</a>
+      </div>
+      <div class="plan">
+        <h3>WordPress Optimización</h3>
+        <p class="price">$19 USD</p>
+        <ul>
+          <li>Velocidad, SEO básico, seguridad</li>
+          <li>Revisión de errores y plugins</li>
+          <li>No incluye hosting ni dominio</li>
+        </ul>
+        <a href="https://wa.me/573102753099" class="cta" target="_blank">Solicitar</a>
+      </div>
+      <div class="plan">
+        <h3>WordPress Total</h3>
+        <p class="price">$49 USD</p>
+        <ul>
+          <li>Diseño completo de sitio nuevo</li>
+          <li>Integración de formularios y redes</li>
+          <li>Optimización, seguridad y SEO</li>
+        </ul>
+        <a href="https://wa.me/573102753099" class="cta" target="_blank">Solicitar</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-info">
+    <p>Contacto: <a href="mailto:cesh404@gmail.com">cesh404@gmail.com</a> | <a href="https://wa.me/573102753099" target="_blank">WhatsApp</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CESH404. Todos los derechos reservados.</p>
+  </footer>
 </body>
 </html>
